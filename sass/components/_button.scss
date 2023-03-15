@@ -1,4 +1,4 @@
-.web-pages{
+.all-pages{
     display: flex;
     justify-content:flex-start;
     margin-bottom: 10px;
@@ -17,7 +17,7 @@
     }
 
 }
-.web-pages__item{
+.all-pages__item{
     margin-right: 8px;
     margin-bottom: 15px;
     @media screen and (min-width:768px){
@@ -29,7 +29,7 @@
     }
 }
 
-.web-pages__bttn{
+.all-pages__bttn{
     background-color: var(--white-text-color);
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -43,8 +43,8 @@
     transition: color $time $time-function, background-color $time $time-function, box-shadow $time $time-function;
     cursor: pointer;
 }
-.web-pages__bttn:hover,
-.web-pages__bttn:focus{
+.all-pages__bttn:hover,
+.all-pages__bttn:focus{
     background-color: $active-and-hover-color;
     color: $white-text-color;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
