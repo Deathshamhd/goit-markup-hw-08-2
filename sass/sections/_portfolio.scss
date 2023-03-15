@@ -33,7 +33,7 @@
     }
 
 }
-.project-naming{
+.project-card-descripion{
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
@@ -96,14 +96,14 @@
 }
 
 
-.project-naming__example{
+.project-card-descripion__name{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     margin-bottom: 4px;;
 }
-.project-naming__type {
+.project-card-descripion__type {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;

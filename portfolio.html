@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+
+      <!-- HEADER -->
+
+    <header>
+      <div class="header container">
+        <a href="index.html" class="logo">WebStudio</a>
+        <nav>
+          <!-- Nav-->
+          <ul class="nav">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link nav__link--current"
+              >Studio</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="portfolio.html" class="nav__link"
+               >Portfolio</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="contacts__link contacts__link--email"
+            >
+              <svg width="16" height="12" class="contacts__icon">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link">
+              <svg width="10" height="16" class="contacts__icon">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
+              +1 212-772-4150</a
+            >
+          </li>
+        </ul>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- portfolio-->
+      <section class="section portfolio-section">
+        <div class="container">
+
+             <!-- BUTTONS LIST -->
+
+
+          <ul class="all-pages">
+            <li class="all-pages__item"><button type="button" class="all-pages__bttn">All</button></li>
+            <li class="all-pages__item"><button type="button" class="all-pages__bttn">Web-site</button></li>
+            <li class="all-pages__item"><button type="button" class="all-pages__bttn">Apps</button></li>
+            <li class="all-pages__item"><button type="button" class="all-pages__bttn">Design</button></li>
+            <li class="all-pages__item"><button type="button" class="all-pages__bttn">Marketing</button></li>
+          </ul>
+          <h2 class="portfolio-section__title">Portfolio Projects</h2>
+          <ul class="portfolio-projects">
+            <li class="portfolio-projects__item">
+              <div class="portfolio_projects__overflow-block">
+                
+                <picture>
+                  <source srcset="./images/technoduck.jpg 1x, ./images/technoduck@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                  width="370"
+                  height="294"
+                  />
+                  <source srcset="./images/technoduck-tablet.jpg 1x, ./images/technoduck-tablet@2x.jpg 2x"
+                  media="(min-width:768px)"
+                  width="340"
+                  height="294"
+                  />
+                  <source srcset="./images/technoduck-mobile.jpg 1x, ./images/technoduck-mobile@2x.jpg 2x"
+                  media="(min-width:480px)"
+                  width="400"
+                  height="294"
+                  />
+                  <source srcset="./images/technoduck-mobile.jpg 1x, ./images/technoduck-mobile@2x.jpg 2x"
+                  media="(max-width:479px)"
+                  width="100%"
+                  />
+                  <img
+                  src="./images/technoduck.jpg"
+                  alt="laptop image"
+                  width="370"
+                  height="294"
+                />
+                </picture>
+
+
+                  <!-- PROJECTS LIST -->
+                <div class="overlay">
+                  <p class="overlay__text">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+              </div>
+              <div class="project-card-descripion">
+                <h3 class="project-card-descripion__name">Technoduck</h3>
+                <p class="project-naming__type">Web-site</p>
+              </div>
+            </li>
+            <li class="portfolio-projects__item">
+              <div class="portfolio_projects__overflow-block">
+                <picture>
+                  <source srcset="./images/basketball.jpg 1x, ./images/basketball@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                  width="370"
+                  height="294"
+                  />
+                  <source srcset="./images/basketball-tablet.jpg 1x, ./images/basketball-tablet@2x.jpg 2x"
+                  media="(min-width:768px)"
+                  width="340"
+                  height="294"
+                  />
+                  <source srcset="./images/basketball-mobile.jpg 1x, ./images/basketball-mobile@2x.jpg 2x"
+                  media="(min-width:480px)"
+                  width="400"
+                  height="294"
+                  />
+                  <source srcset="./images/basketball-mobile.jpg 1x, ./images/basketball-mobile@2x.jpg 2x"
+                  media="(max-width:479px)"
+                  width="100%"
+                  />
+                  <img
+                  src="./images/basketball.jpg"
+                  alt="basketball"
+                  width="370"
+                  height="294"
+                />
+                </picture>
+                <div class="overlay">
+                  <p class="overlay__text">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+              </div>
+              <div class="project-card-descripion">
+                <h3 class="project-card-descripion__name">
+                  Poster New Orlean vs Golden Star
+                </h3>
+                <p class="project-card-descripion__type">Design</p>
+              </div>
+            </li>
+            <li class="portfolio-projects__item">
+              <div class="portfolio_projects__overflow-block">
+                <picture>
+                  <source srcset="./images/seafood.jpg 1x, ./images/seafood@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                  width="370"
+                  height="294"
+                  />
+                  <source srcset="./images/seafood-tablet.jpg 1x, ./images/seafood-tablet@2x.jpg 2x"
+                  media="(min-width:768px)"
+                  width="340"
+                  height="294"
+                  />
+                  <source srcset="./images/seafood-mobile.jpg 1x, ./images/seafood-mobile@2x.jpg 2x"
+                  media="(min-width:480px)"
+                  width="400"
+                  height="294"
+                  />
+                  <source srcset="./images/seafood-mobile.jpg 1x, ./images/seafood-mobile@2x.jpg 2x"
+                  media="(max-width:479px)"
+                  width="100%"
+                  />
+                  <img
+                  src="./images/seafood.jpg"
+                  alt="seafood"
+                  width="370"
+                  height="294"
+                />
+                </picture>
+
+                <div class="overlay">
+                  <p class="overlay__text">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+              </div>
+              <div class="project-card-descripion">
+                <h3 class="project-card-descripion__name">Seafood Restaurant</h3>
+                <p class="project-card-descripion__type">App</p>
+              </div>
+            </li>
+            <li class="portfolio-projects__item">
+              <div class="portfolio_projects__overflow-block">
+                <picture>
+                  <source srcset="./images/headphones.jpg 1x, ./images/headphones@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                  width="370"
+                  height="294"
+                  />
+                  <source srcset="./images/headphones-tablet.jpg 1x, ./images/headphones-tablet@2x.jpg 2x"
+                  media="(min-width:768px)"
+                  width="340"
+                  height="294"
+                  />
+                  <source srcset="./images/headphones-mobile.jpg 1x, ./images/headphones-mobile@2x.jpg 2x"
+                  media="(min-width:480px)"
+                  width="400"
+                  height="294"
+                  />
+                  <source srcset="./images/headphones-mobile.jpg 1x, ./images/headphones-mobile@2x.jpg 2x"
+                  media="(max-width:479px)"
+                  width="100%"
+                  />
+                  <img
+                  src="./images/headphones.jpg"
+                  alt="headphones"
+                  width="370"
+                  height="294"
+                />
+                </picture>
+                <div class="overlay">
+                  <p class="overlay__text">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+              </div>
+              <div class="project-card-descripion">
+                <h3 class="project-card-descripion__name">Project Prime</h3>
+                <p class="project-card-descripion__type">Marketing</p>
+              </div>
+            </li>
+            <li class="portfolio-projects__item">
+              <div class="portfolio_projects__overflow-block">
+                <picture>
+                  <source srcset="./images/boxes.jpg 1x, ./images/boxes@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                  width="370"
+                  height="294"
+                  />
+                  <source srcset="./images/boxes-tablet.jpg 1x, ./images/boxes-tablet@2x.jpg 2x"
+                  media="(min-width:768px)"
+                  width="340"
+                  height="294"
+                  />
+                  <source srcset="./images/boxes-mobile.jpg 1x, ./images/boxes-mobile@2x.jpg 2x"
+                  media="(min-width:480px)"
+                  width="400"
+                  height="294"
+                  />
+                  <source srcset="./images/boxes-mobile.jpg 1x, ./images/boxes-mobile@2x.jpg 2x"
+                  media="(max-width:479px)"
+                  width="100%"
+                  />
+                  <img
+                  src="./images/boxes.jpg"
+                  alt="boxes"
+                  width="370"
+                  height="294"
+                />
+                </picture>
+                <div class="overlay">
+                  <p class="overlay__text">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+              </div>
+              <div class="project-card-descripion">
+                <h3 class="project-card-descripion__name">Project Boxes</h3>
+                <p class="project-card-descripion__type">Apps</p>
+              </div>
+            </li>
+            <li class="portfolio-projects__item">
+              <div class="portfolio_projects__overflow-block">
+                <picture>
+                  <source srcset="./images/monitor.jpg 1x, ./images/monitor@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                  width="370"
+                  height="294"
+                  />
+                  <source srcset="./images/monitor-tablet.jpg 1x, ./images/monitor-tablet@2x.jpg 2x"
+                  media="(min-width:768px)"
+                  width="340"
+                  height="294"
+                  />
+                  <source srcset="./images/monitor-mobile.jpg 1x, ./images/monitor-mobile@2x.jpg 2x"
+                  media="(min-width:480px)"
+                  width="400"
+                  height="294"
+                  />
+                  <source srcset="./images/monitor-mobile.jpg 1x, ./images/monitor-mobile@2x.jpg 2x"
+                  media="(max-width:479px)"
+                  width="100%"
+                  />
+                  <img
+                  src="./images/monitor.jpg"
+                  alt="monitor"
+                  width="370"
+                  height="294"
+                />
+                </picture>
+                <div class="overlay">
+                  <p class="overlay__text">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+              </div>
+              <div class="project-card-descripion">
+                <h3 class="project-card-descripion__name">Inspiration has no Borders</h3>
+                <p class="project-card-descripion__type">Web-site</p>
+              </div>
+            </li>
+            <li class="portfolio-projects__item">
+              <div class="portfolio_projects__overflow-block">
+                <picture>
+                  <source srcset="./images/magazine.jpg 1x, ./images/magazine@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                  width="370"
+                  height="294"
+                  />
+                  <source srcset="./images/magazine-tablet.jpg 1x, ./images/magazine-tablet@2x.jpg 2x"
+                  media="(min-width:768px)"
+                  width="340"
+                  height="294"
+                  />
+                  <source srcset="./images/magazine-mobile.jpg 1x, ./images/magazine-mobile@2x.jpg 2x"
+                  media="(min-width:480px)"
+                  width="400"
+                  height="294"
+                  />
+                  <source srcset="./images/magazine-mobile.jpg 1x, ./images/magazine-mobile@2x.jpg 2x"
+                  media="(max-width:479px)"
+                  width="100%"
+                  />
+                  <img
+                  src="./images/magazine.jpg"
+                  alt="magazine"
+                  width="370"
+                  height="294"
+                />
+                </picture>
+                <div class="overlay">
+                  <p class="overlay__text">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+              </div>
+              <div class="project-card-descripion">
+                <h3 class="project-card-descripion__name">Limited Edition</h3>
+                <p class="project-card-descripion__type">Design</p>
+              </div>
+            </li>
+            <li class="portfolio-projects__item">
+              <div class="portfolio_projects__overflow-block">
+                <picture>
+                  <source srcset="./images/label.jpg 1x, ./images/label@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                  width="370"
+                  height="294"
+                  />
+                  <source srcset="./images/label-tablet.jpg 1x, ./images/label-tablet@2x.jpg 2x"
+                  media="(min-width:768px)"
+                  width="340"
+                  height="294"
+                  />
+                  <source srcset="./images/label-mobile.jpg 1x, ./images/label-mobile@2x.jpg 2x"
+                  media="(min-width:480px)"
+                  width="400"
+                  height="294"
+                  />
+                  <source srcset="./images/label-mobile.jpg 1x, ./images/label-mobile@2x.jpg 2x"
+                  media="(max-width:479px)"
+                  width="100%"
+                  />
+                  <img
+                  src="./images/label.jpg"
+                  alt="label"
+                  width="370"
+                  height="294"
+                />
+                </picture>
+                <div class="overlay">
+                  <p class="overlay__text">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+              </div>
+              <div class="project-card-descripion">
+                <h3 class="project-card-descripion__name">Project LAB</h3>
+                <p class="project-card-descripion__type">Marketing</p>
+              </div>
+            </li>
+            <li class="portfolio-projects__item">
+              <div class="portfolio_projects__overflow-block">
+                <picture>
+                  <source srcset="./images/laptop.jpg 1x, ./images/laptop@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                  width="370"
+                  height="294"
+                  />
+                  <source srcset="./images/laptop-tablet.jpg 1x, ./images/laptop-tablet@2x.jpg 2x"
+                  media="(min-width:768px)"
+                  width="340"
+                  height="294"
+                  />
+                  <source srcset="./images/laptop-mobile.jpg 1x, ./images/laptop-mobile@2x.jpg 2x"
+                  media="(min-width:480px)"
+                  width="400"
+                  height="294"
+                  />
+                  <source srcset="./images/laptop-mobile.jpg 1x, ./images/laptop-mobile@2x.jpg 2x"
+                  media="(max-width:479px)"
+                  width="100%"
+                  />
+                  <img
+                  src="./images/laptop.jpg"
+                  alt="laptop"
+                  width="370"
+                  height="294"
+                />
+                </picture>
+                <div class="overlay">
+                  <p class="overlay__text">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+              </div>
+              <div class="project-card-descripion">
+                <h3 class="project-card-descripion__name">Growing Business</h3>
+                <p class="project-card-descripion__type">Apps</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+ <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="webstudio-address">
+          <a href="index.html" class="logo logo-footer">WebStudio</a>
+          <address>
+            <ul class="address">
+              <li class="address__item">
+                <a
+                  href="https://goo.gl/maps/vmdEabcFhvJnFiz56"
+                  class="address__link"
+                  >695 Park Ave, New York, NY 10065, <br />
+                  United States</a
+                >
+              </li>
+              <li class="address__item">
+                <a href="mailto:info@devstudio.com" class="address__contact"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address__item">
+                <a href="tel:+12127724150" class="address__contact"
+                  >+12127724150</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <!-- Find us / middle footer -->
+        <div class="find-us">
+          <p class="find-us__title">Find us on</p>
+          <ul class="social-media">
+            <li class="social-media__item">
+              <a href="#" class="social-media__link">
+                <svg width="20" height="20" class="social-media__svg">
+                  <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a href="" class="social-media__link">
+                <svg width="20" height="20" class="social-media__svg">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a href="#" class="social-media__link">
+                <svg width="20" height="20" class="social-media__svg">
+                  <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a href="#" class="social-media__link">
+                <svg width="20" height="20" class="social-media__svg">
+                  <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscribe">
+          <p class="subscribe__title">Subscribe to the newsletter</p>
+          <form name="subscribe-form" class="subscribe-form">
+            <input
+              type="email"
+              name="email-input"
+              placeholder="E-mail"
+              class="subscribe-form__input-email"
+            />
+            <button type="submit" class="subscribe-form__btn">
+              Subscribe
+              <svg width="24" height="24" class="subscribe-form__svg">
+                <use href="./images/symbol-defs.svg#icon-twitter-icon"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+        <!--Mobile menu -->
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item"><a href="index.html" class="mobile-menu__link">Studio</a></li>
+        <li class="mobile-menu__item"><a href="portfolio.html" class="mobile-menu__link mobile-menu__link--active">Portfolio</a></li>
+        <li class="mobile-menu__item"><a href="index.html" class="mobile-menu__link">Contacts</a></li>
+      </ul>
+      <ul class="mobile-menu-contacts">
+        <li class="mobile-menu-contacts__item"><a href="tel:12127724150" class="mobile-menu-contacts__link mobile-menu-contacts__link--phone">+1 212-772-4150</a></li>
+        <li class="mobile-menu-contacts__item"><a href="mailto:info@devstudio.com" class="mobile-menu-contacts__link mobile-menu-contacts__link--email">info@devstudio.com</a></li>
+      </ul>
+      <ul class="mobile-menu-media">
+        <li class="mobile-menu-media__item"><a href="" class="mobile-menu-media__link">Instagram <span>|</span> </a></li>
+        <li class="mobile-menu-media__item"><a href="" class="mobile-menu-media__link">Twitter <span>|</span> </a></li>
+        <li class="mobile-menu-media__item"><a href="" class="mobile-menu-media__link"> Facebook <span>|</span> </a></li>
+        <li class="mobile-menu-media__item"><a href="" class="mobile-menu-media__link">LinkedIn</a></li>
+      </ul>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
